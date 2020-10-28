@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
 import Records from './pages/Records';
-
+import Charts from './pages/Charts/index';
 
 const Routes = () => (
     <BrowserRouter>
@@ -14,6 +14,9 @@ const Routes = () => (
             </Route>
             <Route path="/records">
                 <Records/>
+            </Route>
+            <Route path="/charts">
+                <Charts />
             </Route>
         </Switch>
     </BrowserRouter>
